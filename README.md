@@ -1,6 +1,6 @@
-# sfo.c
+# sfo.cpp
 
-sfo.c can be compiled into a command line program, which is faster than the old "sfo" Bash script (roughly by factor 30). It is still compatible with the "pkgrename" and "fw" scripts (https://github.com/hippie68/pkgrename, https://github.com/hippie68/fw), making their output faster. It can be used to query or modify param.sfo data or to build new param.sfo files from scratch.
+sfo.cpp can be compiled into a command line program, which is faster than the old "sfo" Bash script (roughly by factor 30). It is still compatible with the "pkgrename" and "fw" scripts (https://github.com/hippie68/pkgrename, https://github.com/hippie68/fw), making their output faster. It can be used to query or modify param.sfo data or to build new param.sfo files from scratch.
 
     Usage: sfo [OPTIONS] FILE
 
@@ -97,11 +97,11 @@ Or parse them all (Bash):
 
 ### How to compile
 
-    gcc sfo.c -O3 -s -o sfo
+    g++ sfo.cpp -O3 -s -o sfo
 
 For Windows:
 
-    x86_64-w64-mingw32-gcc-win32 sfo.c -O3 -s -o sfo.exe
+    x86_64-w64-mingw32-g++-win32 sfo.cpp -O3 -s -o sfo.exe
 
 Windows binaries are available at https://github.com/hippie68/sfo/releases.
 
